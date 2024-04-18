@@ -7,4 +7,6 @@
 * Lastly style it with scss.
 
 ### node structure
-
+<div align="center">
+<img src="asset/Node_Structure.jpg">
+</div>
