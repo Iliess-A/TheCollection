@@ -7,6 +7,6 @@
 * Lastly style it with scss.
 
 ### node structure
-<div align="center"; width=1000px;>
+<div align="center"; width='2086';heigth='2183px'>
 <img src="asset/Node_Structure.jpg">
 </div>
