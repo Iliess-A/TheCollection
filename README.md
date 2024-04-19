@@ -8,5 +8,5 @@
 
 ### node structure
 <div align="center">
-<img src="asset/Node_Structure.jpg" width="1000" height="500">
+<img src="asset/Node_Structure.jpg" width="500" height="250">
 </div>
