@@ -8,21 +8,25 @@ html {
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: block;
   background-color: rgba(36, 36, 36, 0.7607843137);
   background-size: cover;
 }
 body header {
-  width: 100vh;
-  height: 20vh;
+  width: 100%;
+  height: 20%;
   display: flex;
   position: relative;
-  top: 0;
   color: white;
   background-color: rgba(48, 11, 214, 0.8549019608);
   background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+body header button#switch {
+  display: none;
 }
 body main {
   color: white;
@@ -35,21 +39,69 @@ body main {
 body main article {
   display: flex;
   flex-direction: column;
-  width: 90vw;
-  height: 50vh;
+  width: 90%;
+  height: auto;
   align-items: center;
   justify-content: center;
+  background-color: rgba(36, 36, 36, 0.631372549);
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.297) 0px 4px 6px, rgba(0, 0, 0, 0.272) 0px 12px 13px, rgba(132, 131, 131, 0.09) 0px -3px 5px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+body main article:hover {
+  transform: scale(1.05);
 }
 body main article section {
+  height: 50%;
+}
+body main article section.image {
+  width: 100%;
   height: 50%;
 }
 body main article section.image img {
   -o-object-fit: cover;
      object-fit: cover;
-  align-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+body main article section.texte {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main article section.texte h3 {
+  font-size: 18px;
+  color: green;
+}
+body main article section.texte h1 {
+  font-size: 35px;
+}
+body main article section.texte p {
+  text-align: center;
+}
+body main article section.texte img {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+}
+body main article section.texte a {
+  display: flex;
+  flex-direction: row;
+}
+body main article section.texte a img {
+  width: 10%;
+  height: 10%;
 }
 body footer {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -59,5 +111,47 @@ body footer {
   color: white;
 }
 body footer p {
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+  }
+  body header {
+    width: auto;
+    justify-content: center;
+    padding: 20px;
+  }
+  body header h1 {
+    position: relative;
+  }
+  body header button#switch {
+    border: 1px solid red;
+    display: contents;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    right: 0;
+  }
+  body header button#switch img {
+    height: 20px;
+    width: 20px;
+  }
+  body main {
+    width: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    place-content: center;
+    place-items: center;
+  }
+  body footer p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
