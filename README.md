@@ -10,3 +10,8 @@
 <div align="center">
 <img src="asset/Node_Structure.jpg" width="500" height="250">
 </div>
+
+## a faire :
+* finir le switch claire sombre.
+* faire le filtre par genre.
+* essayer de le faire en menu deroullant.
