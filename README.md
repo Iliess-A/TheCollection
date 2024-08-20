@@ -1,4 +1,4 @@
-# TheCollection(don't judge me it was at my debut)
+# TheCollection
 ## Display card from dom and style it with sass
 ### What should i actually do ?
 * First create html and add the structure/the base (header,main,footer).
